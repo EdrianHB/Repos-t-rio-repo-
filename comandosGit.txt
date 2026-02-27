@@ -1,0 +1,57 @@
+Comandos importantes / interessantes em Git:
+
+1. git init: inicia um novo repositório 
+
+2. git clone <url>: clona um repositório já existente
+
+3. git status: mostra o estado do repositório; mostra o estado dos arquivos
+
+4. git add (.): adiciona arquivos à bandeja para ser comitados
+
+5. git commit -m "mensagem de commit": cria um commit (save) e salva junto a mensagem
+
+6. git commit -am "msg": adiciona À bandeja e commita os arquivos 'modifield', não funciona com 'untracked'.
+
+7. git branch: mostra a lista de branchs
+
+8. git branch <name>: cria nova branch
+
+9. git checkout <name>: muda para a branch 
+
+10. git switch -c <name>: cria nova branch e muda para ela
+
+11. git merge: mescla duas branchs
+
+12. git push origin :envia os commits para o github
+
+13. git fetch: confere se existe algo atualizado na origin do github
+
+14. git pull: puxa o que está atualizado (novo) na origin do github
+
+15. git log: mostra commits e detalhes
+
+16. git log --oneline: mostra commits em uma linha apenas
+
+17. git reset --hard HEAD^1: apaga último commit
+
+18. git revert <commit>: cria um novo commit que apaga todas as alterações do último commit
+
+19. git diff: mostra as diferenças de commits
+
+20. git blame <arquivo>: mostra quem alterou qual linha de um arquivo
+
+21. git clean -f: remove arquivos untracked
+
+22. git rebase: sincroniza branchs sem fazer merge, apenas puxa commits para deixá-las atualizadas
+
+23. git tag: cria tags 'lighweight' nos commits / lista tags
+
+24. git tag -am: cria tag 'annotated' que é possível 'anotar' nela
+
+25. git stash: cria esconderijos de arquivos 'modifield', salvando eles sem precisar commitar.
+
+26. git cherry-pick: atualiza branchs em apenas um commit específico (precisa do git pull origin <>)
+
+27. git config --global alias.<apelido> <comando a ser apelidado>: cria apelidos para comandos 
+
+28. git config --global --unset alias.<apelido>: apaga um apelido de comando criado
